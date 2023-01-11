@@ -1,0 +1,395 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "OpenAPI",
+    "version": "3.0.0"
+  },
+  "paths": {
+    "/generate": {
+      "get": {
+        "summary": "Generate HD wallets.",
+        "description": "Generate HD wallets based on given parameters.",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "query",
+            "description": "Set Cryptocurrency ticker symbol.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "strength",
+            "in": "query",
+            "description": "Set Strength for entropy, choose strength 128, 160, 192, 224 or 256 only. [default: 128]",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "entropy",
+            "in": "query",
+            "description": "Set Master key from entropy hex string.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "mnemonic",
+            "in": "query",
+            "description": "Set Master key from mnemonic words.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "language",
+            "in": "query",
+            "description": "Set Language for mnemonic, choose language english, french, italian, spanish, chinese_simplified, chinese_traditional, japanese or korean only. [default: english]",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "passphrase",
+            "in": "query",
+            "description": "Set Passphrase for mnemonic.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "seed",
+            "in": "query",
+            "description": "Set Master key from seed hex string.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "xprivate-key",
+            "in": "query",
+            "description": "Set Master key from xprivate key.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "xpublic-key",
+            "in": "query",
+            "description": "Set Master key from xpublic key.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "strict",
+            "in": "query",
+            "description": "Set Strict for root keys. [default: False]",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "account",
+            "in": "query",
+            "description": "Set derivation from account. [default: 0]",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "change",
+            "in": "query",
+            "description": "Set Derivation from change. [default: False]",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "address",
+            "in": "query",
+            "description": "Set Derivation from address. [default: 0]",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "path",
+            "in": "query",
+            "description": "Set Master key derivation path.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "private-key",
+            "in": "query",
+            "description": "Set Master key from private key.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "public-key",
+            "in": "query",
+            "description": "Set Master key from public key.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "wif",
+            "in": "query",
+            "description": "Set Master key from wallet important format.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "semantic",
+            "in": "query",
+            "description": "Set Semantic for xprivate and xpublic keys. [default: p2pkh]",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "help",
+            "in": "query",
+            "description": "Show this message and exit.",
+            "required": false,
+            "schema": {
+              "type": "void"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Generated"
+          },
+          "default": {
+            "description": "Unexpected error"
+          }
+        }
+      }
+    },
+    "/generate-addresses": {
+      "get": {
+        "summary": "Generate addresses.",
+        "description": "Generate addresses based on given parameters.",
+        "parameters": [
+          {
+            "name": "symbol",
+            "in": "query",
+            "description": "Set Cryptocurrency ticker symbol.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "strength",
+            "in": "query",
+            "description": "Set Strength for entropy, choose strength 128, 160, 192, 224 or 256 only. [default: 128]",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "entropy",
+            "in": "query",
+            "description": "Set Master key from entropy hex string.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "mnemonic",
+            "in": "query",
+            "description": "Set Master key from mnemonic words.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "language",
+            "in": "query",
+            "description": "Set Language for mnemonic, choose language english, french, italian, spanish, chinese_simplified, chinese_traditional, japanese or korean only. [default: english]",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "passphrase",
+            "in": "query",
+            "description": "Set Passphrase for mnemonic.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "seed",
+            "in": "query",
+            "description": "Set Master key from seed hex string.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "xprivate-key",
+            "in": "query",
+            "description": "Set Master key from xprivate key.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "xpublic-key",
+            "in": "query",
+            "description": "Set Master key from xpublic key.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "strict",
+            "in": "query",
+            "description": "Set Strict for root keys. [default: False]",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "account",
+            "in": "query",
+            "description": "Set derivation from account. [default: 0]",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "change",
+            "in": "query",
+            "description": "Set Derivation from change. [default: False]",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "path",
+            "in": "query",
+            "description": "Set Master key derivation path.",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "semantic",
+            "in": "query",
+            "description": "Set Semantic for xprivate and xpublic keys. [default: p2pkh]",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "hardened",
+            "in": "query",
+            "description": "Set Hardened for addresses. [default: False]",
+            "required": false,
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
+            "name": "start-index",
+            "in": "query",
+            "description": "Set Start from address index. [default: 0]",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "end-index",
+            "in": "query",
+            "description": "Set End to address index. [default: 20]",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "show",
+            "in": "query",
+            "description": "Set Value key of generated HDWallet data to show. [default: path,addresses:p2pkh,public_key,wif]",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "help",
+            "in": "query",
+            "description": "Show this message and exit.",
+            "required": false,
+            "schema": {
+              "type": "void"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Generated addresses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "data": {
+                      "type": "array",
+                      "items": {
+                        "type": "object"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
