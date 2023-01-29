@@ -1,6 +1,7 @@
 # hdwallet-socat-docker
 
-Docker HTTP server to generate addresses making use of [python-hdwallet](https://github.com/meherett/python-hdwallet) and socat.
+Docker HTTP server to generate HD wallets and addresses. Powered by
+[python-hdwallet](https://github.com/meherett/python-hdwallet) and socat.
 
 ## Usage
 
