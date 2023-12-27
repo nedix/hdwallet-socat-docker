@@ -1,4 +1,8 @@
-FROM python:3.9-alpine
+ARG ALPINE_VERSION=3.18
+ARG HDWALLET_VERSION=2.2.0
+ARG PYTHON_VERSION=3.9
+
+FROM python:${PYTHON_VERSION}-alpine${ALPINE_VERSION}
 
 RUN apk add --virtual .build-deps \
         build-base \
@@ -7,7 +11,7 @@ RUN apk add --virtual .build-deps \
         socat \
     && pip install \
         click_aliases \
-        hdwallet \
+        hdwallet==${HDWALLET_VERSION} \
         tabulate \
     && apk del .build-deps
 
