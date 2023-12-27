@@ -31,6 +31,6 @@ jobs:
       - bump-version
 
   deploy-pages:
-    uses: ./.github/workflows/_deploy_pages.yaml
+    uses: ./.github/workflows/_deploy-pages.yaml
     needs:
       - bump-version
