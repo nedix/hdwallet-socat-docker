@@ -4,33 +4,37 @@
     "/^release\\/.*/",
   ],
   enabledManagers: [
-    "regex",
+    "custom.regex",
+    "github-actions",
   ],
-  regexManagers: [
+  customManagers:  [
     {
+      depNameTemplate: "Alpine",
       fileMatch: ["^Dockerfile$"],
       matchStrings: ["ARG ALPINE_VERSION=(?<currentValue>.*?)\\n"],
       datasourceTemplate: "docker",
-      depNameTemplate: "alpine",
+      packageNameTemplate: "alpine",
     },
     {
+      depNameTemplate: "HDWallet",
       fileMatch: ["^Dockerfile$"],
       matchStrings: ["ARG HDWALLET_VERSION=(?<currentValue>.*?)\\n"],
       datasourceTemplate: "pypi",
-      depNameTemplate: "hdwallet",
+      packageNameTemplate: "hdwallet",
     },
     {
+      depNameTemplate: "Python",
       fileMatch: ["^Dockerfile$"],
       matchStrings: ["ARG PYTHON_VERSION=(?<currentValue>.*?)\\n"],
       datasourceTemplate: "docker",
-      depNameTemplate: "python",
-    }
+      packageNameTemplate: "python",
+    },
   ],
   packageRules: [
     {
-      description: "Disable grouping for regex managed dependencies",
-      matchDepTypes: ["regex"],
-      groupName: null
-    }
+      description: "Disable grouping for all dependencies",
+      matchPackagePatterns: [".*"],
+      groupName: null,
+    },
   ],
 }
