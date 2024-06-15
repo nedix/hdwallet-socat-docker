@@ -14,7 +14,7 @@ docker run --pull always --rm --name hdwallet-socat \
 
 Send a test request by navigating to the interactive documentation on http://127.0.0.1:1234/docs.
 
-You may alternatively import the [OpenAPI documentation][Swagger] into your favorite API testing tool.
+You can also import the [OpenAPI documentation][Swagger] into your favorite API testing tool.
 
 ## Attribution
 
