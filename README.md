@@ -1,30 +1,25 @@
-# [hdwallet][python-hdwallet]-[socat]-docker
+# [hdwallet][Python HDWallet]-[socat][Socat]-docker
 
-HTTP API to generate HD wallets and addresses.
+A container that serves an HTTP API that can be used to generate HD wallets and addresses.
 
 ## Usage
 
-#### Start the HTTP server
-
-This example command starts the server on port `80`.
+Run the following command to start the server on port `1234`.
 
 ```shell
 docker run --pull always --rm --name hdwallet-socat \
-    -p 80:1234 \
+    -p 1234:1234 \
     ghcr.io/nedix/hdwallet-socat-docker
 ```
 
-#### Refer to the API documentation
+Send a test request by navigating to the interactive documentation on http://127.0.0.1:1234/docs.
 
-Navigate to http://127.0.0.1/docs to send a test request.
-You may also import the OpenAPI documentation ([swagger.json][swagger]) into your favorite API testing tool.
-
-<hr>
+You may alternatively import the [OpenAPI documentation][Swagger] into your favorite API testing tool.
 
 ## Attribution
 
-Powered by [python-hdwallet] and [socat].
+Powered by [Python HDWallet] and [Socat].
 
-[swagger]: https://github.com/nedix/hdwallet-socat-docker/blob/main/rootfs/var/www/html/swagger.json
-[python-hdwallet]: https://github.com/meherett/python-hdwallet
-[socat]: http://www.dest-unreach.org/socat/
+[Swagger]: https://github.com/nedix/hdwallet-socat-docker/blob/main/rootfs/var/www/html/swagger.json
+[Python HDWallet]: https://github.com/meherett/python-hdwallet
+[Socat]: http://www.dest-unreach.org/socat/
