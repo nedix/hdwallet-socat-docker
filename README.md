@@ -8,7 +8,7 @@ Run the following command to start the server on port `1234`.
 
 ```shell
 docker run --pull always --rm --name hdwallet-socat \
-    -p 1234:1234 \
+    -p 1234:80 \
     ghcr.io/nedix/hdwallet-socat-docker
 ```
 

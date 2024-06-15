@@ -56,4 +56,4 @@ generate_response() {
 
 export -f generate_response
 
-socat -T 1 TCP-LISTEN:1234,reuseaddr,fork SYSTEM:'bash -c generate_response'
+socat -T 1 TCP-LISTEN:80,reuseaddr,fork SYSTEM:'bash -c generate_response'
