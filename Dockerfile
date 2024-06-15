@@ -13,7 +13,7 @@ RUN apk add --virtual .build-deps \
         socat \
     && pip install \
         click_aliases \
-        hdwallet==${HDWALLET_VERSION} \
+        hdwallet=="$HDWALLET_VERSION" \
         tabulate \
     && apk del .build-deps
 
