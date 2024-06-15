@@ -23,7 +23,7 @@ generate_response() {
             exit 0
             ;;
         /docs/swagger.json)
-            echo -e "HTTP/1.1 200 OK\nContent-Type: text/plain\n\n$(cat /var/www/html/swagger.json)\n"
+            echo -e "HTTP/1.1 200 OK\nContent-Type: text/plain\n\n$(cat /var/www/html/docs/swagger.json)\n"
             exit 0
             ;;
         /generate)
