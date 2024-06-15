@@ -18,8 +18,9 @@ You may alternatively import the [OpenAPI documentation][Swagger] into your favo
 
 ## Attribution
 
-Powered by [Python HDWallet] and [Socat].
+- [Python HDWallet] ([License](https://raw.githubusercontent.com/meherett/python-hdwallet/master/LICENSE))
+- [Socat] ([License](https://repo.or.cz/socat.git/blob_plain/HEAD:/COPYING))
 
-[Swagger]: https://github.com/nedix/hdwallet-socat-docker/blob/main/rootfs/var/www/html/swagger.json
 [Python HDWallet]: https://github.com/meherett/python-hdwallet
 [Socat]: http://www.dest-unreach.org/socat/
+[Swagger]: https://github.com/nedix/hdwallet-socat-docker/blob/main/rootfs/var/www/html/swagger.json
