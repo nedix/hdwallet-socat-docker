@@ -1,6 +1,6 @@
 # [hdwallet][Python HDWallet]-[socat][Socat]-docker
 
-A container that serves an HTTP API that can be used to generate HD wallets and addresses.
+A container that can be used to generate HD wallets and addresses through an HTTP API.
 
 ## Usage
 
