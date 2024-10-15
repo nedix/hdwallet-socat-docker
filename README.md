@@ -1,4 +1,4 @@
-# [hdwallet][Python HDWallet]-[socat][Socat]-docker
+# [hdwallet][Python HDWallet]-[socat][Socat]-container
 
 A container that can be used to generate HD wallets and addresses through an HTTP API.
 
