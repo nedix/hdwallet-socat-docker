@@ -4,12 +4,12 @@ A container that can be used to generate HD wallets and addresses through an HTT
 
 ## Usage
 
-Run the following command to start the server on port `1234`.
+Run the following command to start the server on port `8080`.
 
 ```shell
 docker run --pull always --rm --name hdwallet-socat \
-    -p 1234:80 \
-    ghcr.io/nedix/hdwallet-socat-docker
+    -p 8080:80 \
+    ghcr.io/nedix/hdwallet-socat-container
 ```
 
 Send a test request by navigating to the interactive documentation on http://127.0.0.1:1234/docs.
