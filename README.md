@@ -9,7 +9,7 @@ Run the following command to start the server on port `8080`.
 ```shell
 docker run --pull always --rm --name hdwallet-socat \
     -p 8080:80 \
-    ghcr.io/nedix/hdwallet-socat-container
+    nedix/hdwallet
 ```
 
 Send a test request by navigating to the interactive documentation on http://127.0.0.1:1234/docs.
