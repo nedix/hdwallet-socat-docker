@@ -23,4 +23,4 @@ You can also import the [OpenAPI documentation][Swagger] into your favorite API 
 
 [Python HDWallet]: https://github.com/meherett/python-hdwallet
 [Socat]: http://www.dest-unreach.org/socat/
-[Swagger]: https://github.com/nedix/hdwallet-socat-docker/blob/main/rootfs/var/www/html/swagger.json
+[Swagger]: https://raw.githubusercontent.com/nedix/hdwallet-socat-container/refs/heads/main/rootfs/var/www/html/swagger.json
