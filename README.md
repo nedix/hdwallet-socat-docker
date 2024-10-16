@@ -1,6 +1,6 @@
 # [hdwallet-socat-container](https://github.com/nedix/hdwallet-socat-container)
 
-A container that can be used to generate HD wallets and addresses through an HTTP API.
+HTTP API to generate HD wallets and addresses.
 
 ## Usage
 
