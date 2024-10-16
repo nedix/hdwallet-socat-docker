@@ -11,6 +11,7 @@ This example will start the API service on port `8080`.
 ```shell
 docker run --pull always --rm --name hdwallet \
     -p 8080:80 \
+    -d \
     nedix/hdwallet
 ```
 
