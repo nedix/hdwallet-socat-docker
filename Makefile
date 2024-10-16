@@ -1,5 +1,6 @@
 setup:
-	@docker build . -t hdwallet-socat
+	@docker build --progress=plain -f Containerfile -t hdwallet .
 
+up: PORT = 8080
 up:
-	@docker run --rm -p 1234:1234 --name hdwallet-socat hdwallet-socat
+	@docker run --rm -p $(PORT):80 --name hdwallet hdwallet
