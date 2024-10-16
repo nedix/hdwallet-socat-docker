@@ -16,11 +16,11 @@ docker run --pull always --rm --name hdwallet-socat \
 
 #### 2. Generate HD wallets and addresses
 
-- Navigate to the interactive documentation on http://127.0.0.1:8080/docs.
+- Navigate to the interactive documentation on http://127.0.0.1:8080/docs
 
 OR
 
-- Import the [OpenAPI documentation][Swagger] into your favorite API testing tool.
+- Import the [OpenAPI documentation][Swagger] into your favorite API testing tool
 
 <hr>
 
