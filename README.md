@@ -9,7 +9,7 @@ This example will start the API service on port `8080`.
 #### 1. Start the server
 
 ```shell
-docker run --pull always --rm --name hdwallet-socat \
+docker run --pull always --rm --name hdwallet \
     -p 8080:80 \
     nedix/hdwallet
 ```
