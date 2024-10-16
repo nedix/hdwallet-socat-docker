@@ -12,7 +12,7 @@ docker run --pull always --rm --name hdwallet-socat \
     nedix/hdwallet
 ```
 
-Send a test request by navigating to the interactive documentation on http://127.0.0.1:1234/docs.
+Send a test request from the interactive documentation on http://127.0.0.1:8080/docs.
 
 You can also import the [OpenAPI documentation][Swagger] into your favorite API testing tool.
 
